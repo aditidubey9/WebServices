@@ -23,6 +23,7 @@ Download these jar file.Put the jar file in your webapp's lib folder.Create serv
  
  1)@Path:These annotation is compolsoury to create a service.It takes two value one url path second response type.
  eg.
+      
       import com.thinking.machines.annotations.*;
       @Path(value="/student")
       class Student
@@ -38,6 +39,7 @@ Download these jar file.Put the jar file in your webapp's lib folder.Create serv
   
   2)@Forward:These annotation is used to forward request.The method on which @Forward annotation is applied.No response will be sent.
   eg.
+      
       @Path(value="/student")
       class Student
       {
