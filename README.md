@@ -19,7 +19,7 @@ Download the jar file provided in the repository.Put the jar file in your webapp
  
  # Services
  
- 1) @Path:This annotation is compulsary to create a service.It takes two value one url path and second response type.It can be applied      on class and on method.
+ 1) @Path:This annotation is compulsory to create a service.It takes two value one url path and second response type.It can be applied      on class and on method.
     
    example-
       
