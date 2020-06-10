@@ -66,14 +66,15 @@ example-
     }
     }
 
-  4)@Secured:This annotation is used to provide security to your method.For applying these annotation you have to create a seperate        class which implements SecuredMethodInterface,which is available in package com.thinking.machines.annotations.It can only be applied    on method.
+  4)@Secured:This annotation is used to provide security to your method.For applying these annotation you have to create a seperate        class which implements SecureMethodInterface,which is available in package com.thinking.machines.annotations.It can only be applied      on method.
    
    example-
    
     import com.thinking.machines.annotations.*
-    class MethodSecurity implements SecuredMethodAnnotation
+    
+    class MethodSecurity implements SecureMethodAnnotation
     {
-    public boolean isMethodSecured(HttpServletRequest request,HttpSession session,ServletContext contex)
+    public boolean isMethodSecured(ServletContext servletContext,HttpSession session,HttpServletRequest request)
     {
     //some checks
     return true/fasle;
