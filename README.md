@@ -65,6 +65,8 @@ example-
     //code to copy files to your preferred directory
     }
     }
+    
+  For file upload functionality you have to create folder named filestore in your  webapp's WEB-INF folder
 
   4)@Secured:This annotation is used to provide security to your method.For applying these annotation you have to create a seperate        class which implements SecureMethodInterface,which is available in package com.thinking.machines.annotations.It can only be applied      on method.
    
