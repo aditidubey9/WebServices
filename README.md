@@ -19,25 +19,26 @@ Download the jar file provided in the repository.Put the jar file in your webapp
  
  # Services
  
- 1) @Path:This annotation is compulsary to create a service.It takes two value one url path and second response type.It can be applied     on class and on method.
- example-
+ 1) @Path:This annotation is compulsary to create a service.It takes two value one url path and second response type.It can be applied      on class and on method.
+    
+   example-
       
-      import com.thinking.machines.annotations.*;
-      @Path(value="/student")
-      class Student
-      {
-      @Path(value="/add",responseType="text/html")
-      public String add()
-      {
+       import com.thinking.machines.annotations.*;
+       @Path(value="/student")
+       class Student
+       {
+       @Path(value="/add",responseType="text/html")
+       public String add()
+       {
         return "service example";
-      }
-      }
+       }
+       }
   
   responseType can be assigned 3 values 1)text/html 2)json 3)none
   
-  2)@Forward:This annotation is used to forward request.The method on which @Forward annotation is applied.No response will be sent.It    can only be applied on method.
+  2)@Forward:This annotation is used to forward request.The method on which @Forward annotation is applied.No response will be sent.It      can only be applied on method.
  
-  example-
+   example-
       
       @Path(value="/student")
       class Student
